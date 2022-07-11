@@ -52,7 +52,7 @@ export class App extends Component {
       return alert(`This phone number is already in use.`);
     }
     this.setState(({ contacts }) => ({
-      contacts: [{ name, id: nanoid() }, ...contacts],
+      contacts: [{ name, number, id: nanoid() }, ...contacts],
     }));
   };
   // Возвращает результат фильтра
